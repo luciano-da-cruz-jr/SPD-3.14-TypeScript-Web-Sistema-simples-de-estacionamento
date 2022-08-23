@@ -1,0 +1,102 @@
+body
+{
+    font-family: Arial, Helvetica, sans-serif;
+    background: url("./estacionamento.jpg") no-repeat right top fixed;
+}
+
+.flex-container
+{
+    display: flex;
+}
+
+.flex-item 
+{
+    flex-shrink: 0.1; /* o valor padrão é 0 Não funcionando*/
+    flex-basis: 0.1;
+}
+
+.register
+{
+    margin: 5px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.register input[type=text]
+{
+    margin: 5px;
+    border: 2px solid gray;
+    border-radius: 4px;
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+    background: #d4cfcf;
+    font-weight: bold;
+    height: 20px;
+}
+
+.register input::placeholder 
+{
+    color: rgb(233, 75, 13);
+}
+
+.register button
+{
+    margin: 6px;
+    border-radius: 4px;
+    font-size: 13;
+    width: 100px;
+    height: 25px;
+    background-color: #0066b8;
+    padding: 1px;
+    border: none;
+    color: white;
+    transition: all 0.1s;
+    cursor: pointer;
+}
+
+.register button:hover{
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+}
+
+.registered
+{
+    justify-content: center;
+    flex-wrap: wrap; /*Não funcionando*/
+    font-size: 13px;
+    padding: 5px;
+}
+
+.registered table
+{  
+    padding: 0px;
+    border: 3px solid black;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.registered table tr
+{
+    background: lightblue; 
+}
+
+.registered table th /*Título da tabela*/
+{
+    background: rgb(48, 48, 214); /** Muda para um fundo cinza. **/
+    color: white; /** Troca a cor da fonte para branco. **/
+    padding: 5px;
+}
+
+.registered .delete 
+{
+    color: white;
+    background-color: red;
+    border-radius: 4px;
+    transition: all 0.5s;
+    cursor: pointer;
+}
+
+.registered .delete:hover{
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+}
